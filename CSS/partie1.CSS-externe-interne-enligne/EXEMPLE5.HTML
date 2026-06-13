@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cours HTML et CSS</title>
+  <meta charset="utf-8">
+  <style>
+    .t1, .t2 {
+      font-size: 20px;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    .t1 td, .t1 th,
+    .t2 td, .t2 th {
+      padding: 15px 25px;
+      border: 2px solid black;
+      text-align: center;
+    }
+.t1 th, .t2 th {
+      background-color: #4a4a8a;
+      color: white;
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Table t1 simple -->
+  <table class="t1">
+    <tr>
+      <th>Nom</th>
+      <th>Prenom</th>
+ <th>Mail</th>
+    </tr>
+    <tr>
+      <td>Faouzi</td>
+      <td>Mourad</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+
+  <!-- Table t2 -->
+  <table class="t2">
+    <tr>
+      <th>Nom</th>
+      <th>Prénom</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Ahmadi</td>
+      <td>Ilyass</td>
+      <td>29</td>
+ </tr>
+    <tr>
+      <td>Bachiri</td>
+      <td>Ramzi</td>
+      <td>24</td>
+    </tr>
+  </table>
+
+  <!-- Table t1 t2 combinées -->
+  <table class="t1 t2">
+    <tr>
+      <th>Nom</th>
+      <th>Diplome</th>
+      <th>Date obtention</th>
+    </tr>
+<tr>
+      <td>Ahmadi</td>
+      <td>Ingenieur</td>
+      <td>01/01/2009</td>
+    </tr>
+    <tr>
+      <td>Bachiri</td>
+      <td>Technicien spécialisé</td>
+      <td>24/06/1999</td>
+    </tr>
+  </table>
+
+</body>
+</html>

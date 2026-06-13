@@ -1,0 +1,180 @@
+
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .form-container {
+      border: 2px solid #000;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+
+      /* IMAGE EN BACKGROUND */
+      background-image: url("VOYAGELOGO.JPG");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* FOND BLANC SEMI-TRANSPARENT POUR LIRE LE TEXTE */
+    .form-inner {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .form-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #000;
+      font-size: 16px;
+      padding: 4px 0;
+      background: transparent;
+    }
+
+    select {
+      margin-top: 5px;
+      padding: 5px;
+      font-size: 14px;
+      background: transparent;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 8px;
+      gap: 8px;
+    }
+
+    .radio-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 8px;
+      gap: 8px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-top: 8px;
+      border: 1px solid #000;
+      font-size: 14px;
+      padding: 5px;
+      background: transparent;
+    }
+
+    .bottom-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .client-row {
+      border: 1px solid #000;
+      padding: 8px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .footer {
+      border: 1px solid #000;
+      padding: 8px;
+      margin-top: 5px;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 8px 20px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <div class="form-inner">
+
+      <div class="form-title">Préparez vos vacances d'été</div>
+
+      <label>Votre Nom *</label>
+      <input type="text" name="nom" required>
+
+      <label>Votre adresse E-Mail *</label>
+      <input type="email" name="email" required>
+
+      <label>Choisissez un Continent</label>
+      <select name="continent">
+        <option value="">-- Choisir --</option>
+        <option value="europe">Europe</option>
+        <option value="afrique">Afrique</option>
+        <option value="asie">Asie</option>
+        <option value="amerique">Amérique</option>
+        <option value="oceanie">Océanie</option>
+      </select>
+
+      <label>Conditions spéciales pour groupe</label>
+      <p>Choisir deux options maximum</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="groupe" value="seul"> Seul</label>
+        <label><input type="checkbox" name="groupe" value="enfants"> Enfants</label>
+        <label><input type="checkbox" name="groupe" value="couple" checked> Couple</label>
+        <label><input type="checkbox" name="groupe" value="groupe"> Groupe</label>
+      </div>
+
+      <label>Souhaitez-vous être logé en</label>
+      <div class="radio-group">
+        <label><input type="radio" name="logement" value="hotel"> Hôtel</label>
+        <label><input type="radio" name="logement" value="chalet"> Chalet</label>
+        <label><input type="radio" name="logement" value="camping"> Camping</label>
+        <label><input type="radio" name="logement" value="villa"> Villa</label>
+      </div>
+
+      <label>Veuillez noter vos demandes complémentaires ci-après</label>
+      <textarea name="demandes" placeholder="Vos demandes..."></textarea>
+
+      <div class="bottom-row">
+        <input type="reset" value="Réinitialiser">
+        <input type="submit" value="Envoyer">
+      </div>
+
+      <div class="client-row">
+        Etes-vous déjà client de notre Agence
+        <label><input type="radio" name="client" value="oui" checked> Oui</label>
+        <label><input type="radio" name="client" value="non"> Non</label>
+      </div>
+
+      <div class="footer">
+        La documentation vous est envoyée par retour. Merci de votre visite
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+

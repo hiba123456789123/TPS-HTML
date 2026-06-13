@@ -1,0 +1,142 @@
+
+<html>
+<head>
+    
+    <title>Partie 2 - Tableaux</title>
+</head>
+<body>
+
+
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr align="center">
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>deux</td>
+            <td>3</td>
+            <td>quatre</td>
+        </tr>
+        <tr>
+            <td>cinq</td>
+            <td>6</td>
+            <td>sept</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>dix</td>
+            <td>11</td>
+            <td>douze</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+   
+    <table border="1" cellpadding="10" cellspacing="0" width="90%">
+        <!-- Ligne d'en-tête -->
+        <tr align="center">
+            <th width="33%">Janvier</th>
+            <th width="33%">Février</th>
+            <th width="33%">Mars</th>
+        </tr>
+        <!-- Première ligne de contenu avec alignements verticaux spécifiques -->
+        <tr>
+            <!-- Janvier : Texte centré verticalement (middle) et horizontalement -->
+            <td align="center" valign="middle" height="120">
+                Après d'agréables<br>vacances<br>de nouveau<br>au travail ...
+            </td>
+            <!-- Février : Texte aligné en haut (top) et à droite -->
+            <td align="right" valign="top">
+                Dans 2<br><br><br>semaines<br><br><br>les vacances !
+            </td>
+            <!-- Mars : Texte centré verticalement (middle) et à gauche -->
+            <td align="left" valign="middle">
+                Déjà le<br>conseil<br>de classe
+            </td>
+        </tr>
+        <!-- Deuxième ligne de contenu -->
+        <tr>
+            <!-- Janvier : Texte aligné en haut-->
+            <td align="center" valign="top" height="80">
+                Il neige<br>déjà
+            </td>
+            <!-- Février : Centré au milieu -->
+            <td align="center" valign="middle">
+                Il fait très<br>froid<br>depuis<br>10 jours
+            </td>
+            <!-- Mars : Texte centré en bas  (bottom) -->
+            <td align="center" valign="bottom">
+                Encore<br>de la pluie...
+            </td>
+        </tr>
+    </table>
+
+    <br><hr><br>
+
+    
+    <table border="1" cellpadding="5" cellspacing="0" align="left">
+        <!-- Ligne 1 -->
+        <tr align="center">
+            <!-- Fusionne 2 lignes vers le bas pour "Population" -->
+            <th rowspan="2">Population</th>
+            <!-- Fusionne 3 colonnes vers la droite pour "Moyenne" (Hauteur, Espérance, Poids) -->
+            <th colspan="3">Moyenne</th>
+        </tr>
+        <!-- Ligne 2 -->
+        <tr align="center">
+            <th>Hauteur en cm</th>
+            <th>Espérance de vie</th>
+            <th>Poids moyen</th> <!-- Colonne ajoutée selon la consigne -->
+        </tr>
+        <!-- Ligne 3 (Masculin) -->
+        <tr>
+            <!-- Fusionne 2 lignes pour le titre "Sexe" à gauche -->
+            <th rowspan="2" valign="middle">Sexe</th>
+            <th>Masculin</th>
+            <td align="center">1,78</td>
+            <td align="center">70</td>
+            <td align="center">75 kg</td> <!-- Valeur ajoutée -->
+        </tr>
+        <!-- Ligne 4 (Féminin) -->
+        <tr>
+            <th>Féminin</th>
+            <td align="center">1,70</td>
+            <td align="center">80</td>
+            <td align="center">55 kg</td> <!-- Valeur ajoutée -->
+        </tr>
+    </table>
+
+    <br style="clear:both;"><br><hr><br>
+
+    <table border="1" cellpadding="8" cellspacing="0" width="80%">
+        <tr align="center">
+            <th>Nom de la rubrique</th>
+            <th>Image</th>
+            <th>Lien</th>
+        </tr>
+        <tr align="center">
+            <td>Moteur de recherche</td>
+            
+            <td><img src="GOOGLELOGO.PNG" width="60"></td>
+            <td><a href="https://www.google.com" target="_blank">Visiter Google</a></td>
+        </tr>
+        <tr align="center">
+            <td>Éducation (ENA)</td>
+            <td><img src="ENAMLOGO.JPG" width="60"></td>
+            <td><a href="https://www.ena.fr" target="_blank">Visiter l'ENA</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* 1) Image de fond répétée */
+body {
+    background-image: url('CSSimage.jpeg'); /* Remplacez par votre fichier image */
+    background-repeat: repeat; /* Répète horizontalement et verticalement */
+}
+
+/* 2) Police personnalisée */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+/* 3) Division occupant 25% de la hauteur */
+/* 4) Bordure et fond */
+.ma-div-speciale {
+    height: 25vh; /* 25% de la hauteur de la fenêtre */
+    border: 2px solid blue;
+    background-color: lightgray;
+    text-align: justify; /* Alignement justifié */
+}
+
+/* 6) Classes pour les types de contenu */
+.classe-texte { color: black; }
+table { border: 1px solid black; }
+
+/* 7) Positionnement absolu */
+#elet1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: yellow;
+}
+
+#elet2 {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    background-color: pink;
+}
+#presentation {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

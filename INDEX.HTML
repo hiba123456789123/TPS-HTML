@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projet Web – Rita</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #f5f4f0;
+      color: #1a1a1a;
+      font-family: Georgia, 'Times New Roman', serif;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 3rem 2rem 2rem;
+      border-bottom: 2px solid #1a1a1a;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header h1 { font-size: 2rem; font-weight: normal; }
+    header p { margin-top: 0.4rem; font-size: 0.9rem; color: #666; font-family: 'Segoe UI', sans-serif; }
+
+    nav {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.85rem;
+    }
+    nav a { color: #444; text-decoration: none; padding-bottom: 2px; border-bottom: 1px solid transparent; transition: border-color 0.2s, color 0.2s; }
+    nav a:hover { color: #000; border-bottom-color: #000; }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    section h2 {
+      font-size: 0.8rem;
+      font-weight: normal;
+      font-family: 'Segoe UI', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #888;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #e8e8e8;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 0.92rem;
+      transition: padding-left 0.15s, background 0.15s;
+      gap: 1rem;
+    }
+    .item:hover { background: #eeecea; padding-left: 0.5rem; }
+    .item-left { display: flex; align-items: center; gap: 0.6rem; }
+    .item-name { font-weight: 500; }
+    .badge {
+      font-size: 0.68rem;
+      padding: 0.1rem 0.45rem;
+      border-radius: 3px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .html { background: #ffe5e0; color: #c0392b; }
+    .dir  { background: #e8e4ff; color: #5b4fcf; }
+    .item-date { font-size: 0.78rem; color: #999; white-space: nowrap; }
+
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+      border-top: 1px solid #ccc;
+      font-size: 0.8rem;
+      color: #aaa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Projet Web — Ghita MANDARI et Noha MEJDOUBI</h1>
+  <p>Travaux HTML/CSS · 2026</p>
+</header>
+
+<nav>
+  <a href="#mon-site">MON_SITE</a>
+  <a href="#production">PRODUCTION</a>
+  <a href="#formulaire">FORMULAIRE</a>
+  <a href="#css">CSS</a>
+  <a href="#tps">TPS-FONTS-TABLEAUX</a>
+  <a href="#ena-site">ENA_SITE</a>
+</nav>
+
+<main>
+
+  <!-- MON_SITE -->
+  <section id="mon-site">
+    <h2>MON_SITE</h2>
+    <a class="item" href="MON_SITE/IMAGE/">
+      <div class="item-left"><span>📁</span><span class="item-name">IMAGE</span><span class="badge dir">Dossier</span></div>
+      <span class="item-date">09/06/2026</span>
+    </a>
+    <a class="item" href="MON_SITE/TpH1.html">
+      <div class="item-left"><span>📄</span><span class="item-name">TpH1</span><span class="badge html">HTML</span></div>
+      <span class="item-date">03/06/2026</span>
+    </a>
+  </section>
+
+  <!-- PRODUCTION -->
+  <section id="production">
+    <h2>PRODUCTION</h2>
+    <a class="item" href="PRODUCTION/animale.html">
+      <div class="item-left"><span>📄</span><span class="item-name">animale</span><span class="badge html">HTML</span></div>
+      <span class="item-date">10/06/2026</span>
+    </a>
+    <a class="item" href="PRODUCTION/Page1.html">
+      <div class="item-left"><span>📄</span><span class="item-name">Page1</span><span class="badge html">HTML</span></div>
+      <span class="item-date">06/06/2026</span>
+    </a>
+    <a class="item" href="PRODUCTION/vegetale.html">
+      <div class="item-left"><span>📄</span><span class="item-name">végétale</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+  </section>
+
+  <!-- FORMULAIRE -->
+  <section id="formulaire">
+    <h2>FORMULAIRE</h2>
+    <a class="item" href="FORMULAIRE/TPH5F.html">
+      <div class="item-left"><span>📄</span><span class="item-name">TPH5F</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+  </section>
+
+  <!-- CSS -->
+  <section id="css">
+    <h2>CSS</h2>
+    <a class="item" href="CSS/partie1.CSS-externe-interne-enligne/">
+      <div class="item-left"><span>📂</span><span class="item-name">partie1 — externe / interne / en ligne</span><span class="badge dir">Dossier</span></div>
+      <span class="item-date">13/06/2026</span>
+    </a>
+    <a class="item" href="CSS/partie2.CSS/">
+      <div class="item-left"><span>📂</span><span class="item-name">partie2 — CSS</span><span class="badge dir">Dossier</span></div>
+      <span class="item-date">13/06/2026</span>
+    </a>
+  </section>
+
+  <!-- TPS-FONTS-TABLEAUX -->
+  <section id="tps">
+    <h2>TPS-FONTS-TABLEAUX</h2>
+    <a class="item" href="TPS-FONTS-TABLEAUX/TPH2.html">
+      <div class="item-left"><span>📄</span><span class="item-name">TPH2</span><span class="badge html">HTML</span></div>
+      <span class="item-date">02/06/2026</span>
+    </a>
+    <a class="item" href="TPS-FONTS-TABLEAUX/TPH4.html">
+      <div class="item-left"><span>📄</span><span class="item-name">TPH4</span><span class="badge html">HTML</span></div>
+      <span class="item-date">09/06/2026</span>
+    </a>
+  </section>
+
+  <!-- ENA_SITE -->
+  <section id="ena-site">
+    <h2>ENA_SITE</h2>
+    <a class="item" href="ena_site/accueil.html">
+      <div class="item-left"><span>📄</span><span class="item-name">accueil</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/agronomie.html">
+      <div class="item-left"><span>📄</span><span class="item-name">agronomie</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/arboriculture.html">
+      <div class="item-left"><span>📄</span><span class="item-name">arboriculture</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/deuxieme_cycle.html">
+      <div class="item-left"><span>📄</span><span class="item-name">deuxième_cycle</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/developpement.html">
+      <div class="item-left"><span>📄</span><span class="item-name">developpement</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/economie.html">
+      <div class="item-left"><span>📄</span><span class="item-name">economie</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/entete.html">
+      <div class="item-left"><span>📄</span><span class="item-name">entete</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/index.html">
+      <div class="item-left"><span>📄</span><span class="item-name">index</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/logo.html">
+      <div class="item-left"><span>📄</span><span class="item-name">logo</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/menu.html">
+      <div class="item-left"><span>📄</span><span class="item-name">menu</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/missions.html">
+      <div class="item-left"><span>📄</span><span class="item-name">missions</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/premier_cycle.html">
+      <div class="item-left"><span>📄</span><span class="item-name">premier_cycle</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/ressources.html">
+      <div class="item-left"><span>📄</span><span class="item-name">ressources</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/statut.html">
+      <div class="item-left"><span>📄</span><span class="item-name">statut</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/troisieme_cycle.html">
+      <div class="item-left"><span>📄</span><span class="item-name">troisième_cycle</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+    <a class="item" href="ena_site/zootechnie.html">
+      <div class="item-left"><span>📄</span><span class="item-name">zootechnie</span><span class="badge html">HTML</span></div>
+      <span class="item-date">12/06/2026</span>
+    </a>
+  </section>
+
+</main>
+
